@@ -1,0 +1,6 @@
+# Railway Configuration
+[build]
+  command = "cd back && npm install"
+
+[deploy]
+  startCommand = "cd back && npm start"

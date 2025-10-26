@@ -1,0 +1,24 @@
+{
+  "name": "sistema-comissoes-backend",
+  "version": "1.0.0",
+  "description": "API do Sistema de Comissões e Treinamentos",
+  "main": "back/server.js",
+  "scripts": {
+    "start": "cd back && npm start",
+    "build": "cd back && npm install",
+    "dev": "cd back && npm run dev"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "jwt",
+    "api"
+  ],
+  "author": "Leonardo",
+  "license": "MIT"
+}
