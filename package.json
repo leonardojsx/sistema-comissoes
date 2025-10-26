@@ -1,0 +1,47 @@
+{
+  "name": "sistema-treinamentos",
+  "version": "1.0.0",
+  "description": "Sistema de gestão de comissões e treinamentos",
+  "scripts": {
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "install:backend": "cd back && npm install",
+    "install:frontend": "cd front && npm install",
+    
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd back && npm run dev",
+    "dev:frontend": "cd front && npm run dev",
+    
+    "build": "npm run build:frontend",
+    "build:frontend": "cd front && npm run build",
+    
+    "start": "cd back && npm start",
+    "start:backend": "cd back && npm start",
+    "start:frontend": "cd front && npm run preview",
+    
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd back && npm test",
+    "test:frontend": "cd front && npm test",
+    
+    "migrate": "cd back && npm run migrate",
+    "migrate:rollback": "cd back && knex migrate:rollback",
+    "migrate:latest": "cd back && knex migrate:latest"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "express",
+    "mysql",
+    "sistema-gestao",
+    "comissoes",
+    "treinamentos"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
